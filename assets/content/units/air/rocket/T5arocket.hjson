@@ -1,0 +1,51 @@
+type: flying
+flying: true
+health: 8000
+speed: 2
+armor: 8
+accel: 0.25
+drag: 0.01
+rotateShooting: true
+engineOffset: 0
+engineSize: 0
+weapons: [
+    {
+    name: rocket-AT5-gun1
+    x: 4
+    y: -3
+    shootSound: missile
+    reload: 150
+    bullet: {
+        type: MissileBulletType
+        bulletSprite: missile
+        damage: 550
+        speed: 0.5
+        drag: -0.04
+        splashDamage: 250
+        splashDamageRadius: 40
+        lifetime: 90
+        frontColor: fffffff
+        backColor: e65555
+        hitEffect:blastExplosion
+        }
+    },
+    {
+    name: rocket-AT5-gun2
+    x: 6
+    y: -2
+    shootSound: missile
+    reload: 7.5
+    bullet: {
+        type: MissileBulletType
+        bulletSprite: missile
+        damage: 400
+        speed: 3
+        splashDamage: 100
+        splashDamageRadius: 20
+        lifetime: 70
+        frontColor: fffffff
+        backColor: e65555
+        hitEffect:blastExplosion
+        }
+    }
+]

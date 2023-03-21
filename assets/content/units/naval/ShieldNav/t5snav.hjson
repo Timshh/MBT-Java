@@ -1,0 +1,63 @@
+type: naval
+speed: 1.25
+drag: 0.3
+hitSize: 10
+health: 12000
+accel: 1.2
+rotateSpeed: 3.3
+trailLength: 40
+rotateShooting: true
+armor: 8
+weapons: [
+    {
+    name: t5snav-gun
+    reload: 20
+    mirror: false
+    y: -12
+    x: 0
+    shootSound: missile
+    xRand: 4
+    shotDelay: 1
+    shots: 3
+    rotate: true
+    inaccuracy: 6
+    bullet: {
+        type: MissileBulletType
+        bulletSprite: missile
+        lifetime: 125
+        speed: 4
+        hitEffect:blastExplosion
+        splashDamageRadius: 20
+        splashDamage: 100
+        homingPower: 3
+        weaveScale: 7
+        homingRange: 60
+        damage: 175
+        frontColor: 40B8F8
+        backColor: 4088F8
+        trailColor: 66ffffff
+        }
+    }
+]
+abilities: [
+  {
+    type: EnergyFieldAbility
+    range: 175
+    damage: 1500
+    color: 00dfeb
+    sectors: 5
+    sectorRad: 0.15
+    rotateSpeed: 6
+    status: electrified
+    statusDuration: 100
+    healPercent: 7
+    effectRadius: 2.5
+  },
+  {
+    type: ForceFieldAbility
+    radius: 75
+    regen: 45
+    max: 4000
+    cooldown: 100
+  }
+]

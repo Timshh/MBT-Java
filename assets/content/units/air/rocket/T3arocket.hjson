@@ -1,0 +1,32 @@
+type: flying
+flying: true
+health: 700
+armor: 5
+speed: 2.4
+accel: 0.25
+rotateShooting: true
+drag: 0.01
+engineOffset: 0
+engineSize: 0
+weapons: [
+    {
+    name: rocket-AT3-gun1
+    x: 4
+    y: -3
+    shootSound: missile
+    reload: 100
+    bullet: {
+        type: MissileBulletType
+        bulletSprite: missile
+        damage: 60
+        speed: 1
+        drag: -0.04
+        splashDamage: 150
+        splashDamageRadius:30
+        lifetime: 85
+        frontColor: fffffff
+        backColor: e65555
+        hitEffect:blastExplosion
+        }
+    }
+]

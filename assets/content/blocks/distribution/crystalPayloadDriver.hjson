@@ -1,0 +1,15 @@
+type: PayloadMassDriver
+name: crystal mass driver
+size: 6
+rotateSpeed:10
+range: 900
+knockback: 10
+reloadTime: 50
+chargeTime: 70
+maxPayloadSize: 4
+requirements: [
+  titanium/350
+  crystal/300
+  silicon/100
+]
+category: units

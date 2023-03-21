@@ -1,0 +1,32 @@
+type: mech
+name: reactive
+description: light rocket unit with 2 rocket launchers.
+speed: 0.6
+health: 200
+armor: 0
+weapons: [
+    {
+        name: rocket-T1-gun1
+        reload: 9
+        x: 5
+        y: 0
+        shootSound: missile
+        top: false
+        bullet: {
+            type: MissileBulletType
+            bulletSprite: missile
+            lifetime: 80
+            speed: 3
+            hitEffect:blastExplosion
+            splashDamageRadius: 20
+            splashDamage: 5
+            homingPower: 2
+            homingRange: 40
+            damage: 7
+            frontColor: f8ad42
+            backColor: f68021
+            inaccuracy: 3
+        }
+    }
+]
+research: ironGroundFactory

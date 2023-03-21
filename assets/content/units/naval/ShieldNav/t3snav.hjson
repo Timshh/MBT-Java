@@ -1,0 +1,24 @@
+type: naval
+speed: 1.35
+drag: 0.13
+hitSize: 10
+health: 1500
+accel: 0.8
+rotateSpeed: 3.3
+trailLength: 30
+rotateShooting: true
+armor: 5
+abilities: [
+  {
+    type: EnergyFieldAbility
+    range: 120
+    damage: 1000
+    color: 00dfeb
+    sectors: 3
+    sectorRad: 0.2
+    rotateSpeed: 2
+    status: electrified
+    effectRadius: 2
+    statusDuration: 150
+  }
+]

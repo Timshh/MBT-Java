@@ -1,0 +1,39 @@
+type: naval
+speed: 1.4
+drag: 0.13
+hitSize: 10
+health: 750
+accel: 0.4
+rotateSpeed: 3.3
+trailLength: 20
+rotateShooting: true
+armor: 2
+weapons: [
+    {
+    name: t2snav-gun
+    reload: 20
+    mirror: false
+    y: -5
+    x: 0
+    shootSound: missile
+    shots: 3
+    rotate: true
+    inaccuracy: 6
+    bullet: {
+        type: MissileBulletType
+        bulletSprite: missile
+        lifetime: 100
+        speed: 4
+        hitEffect:blastExplosion
+        splashDamageRadius: 10
+        splashDamage: 10
+        homingPower: 3
+        weaveScale: 5
+        homingRange: 60
+        damage: 10
+        frontColor: 40B8F8
+        backColor: 4088F8
+        trailColor: 66ffffff
+        }
+    }
+]

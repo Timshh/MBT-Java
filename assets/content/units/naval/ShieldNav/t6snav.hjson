@@ -1,0 +1,64 @@
+type: naval
+speed: 1.2
+drag: 0.4
+hitSize: 25
+health: 35000
+accel: 2
+rotateSpeed: 3.3
+trailLength: 60
+rotateShooting: true
+armor: 12
+weapons: [
+    {
+    name: t6snav-gun
+    reload: 30
+    mirror: false
+    y: -15
+    x: 0
+    shootSound: missile
+    xRand: 6
+    shots: 6
+    shotDelay: 1
+    rotate: true
+    inaccuracy: 6
+    bullet: {
+        type: MissileBulletType
+        bulletSprite: missile
+        lifetime: 125
+        speed: 5
+        hitEffect:blastExplosion
+        splashDamageRadius: 25
+        splashDamage: 200
+        homingPower: 3
+        weaveScale: 7
+        homingRange: 60
+        damage: 300
+        frontColor: 40B8F8
+        backColor: 4088F8
+        trailColor: 66ffffff
+        }
+    }
+]
+abilities: [
+  {
+    type: EnergyFieldAbility
+    range: 220
+    color:00dfeb
+    damage: 2000
+    color: 00dfeb
+    sectors: 7
+    sectorRad: 0.1
+    rotateSpeed: 10
+    status: electrified
+    statusDuration: 50
+    healPercent: 10
+    effectRadius: 2.5
+  },
+  {
+    type: ForceFieldAbility
+    radius: 100
+    regen: 75
+    max: 7500
+    cooldown: 80
+  }
+]
