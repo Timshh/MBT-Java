@@ -33,7 +33,9 @@ import static mindustry.type.ItemStack.with;
 
 
 public class MBT extends Mod{
-    public void loadContent(){
+    @Override
+    public static void loadContent(){
+        example.UnitTypes.loadContent();
         Log.info("Loading mbt.turrets");
         var mbt = new ItemTurret("mbt"){{
             requirements(Category.turret, with(Items.silicon, 450, Items.graphite, 400, Items.tungsten, 500, Items.carbide, 300));

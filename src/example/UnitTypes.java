@@ -30,7 +30,7 @@ import static mindustry.type.ItemStack.with;
 
 
 public class UnitTypes{
-    public void loadContent(){
+    public static void loadContent(){
         Log.info("Loading mbt.units");
         var train = new UnitType("Harbinger"){{
             speed = 2.7f;
